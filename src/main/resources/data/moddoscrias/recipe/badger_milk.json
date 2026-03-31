@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+      "A": {
+        "item": "moddoscrias:badger_essence"
+      },
+      "B": {
+        "item": "moddoscrias:polystyrene_block"
+      },
+      "C": {
+      "item": "minecraft:glass_bottle"
+    },
+      "D": {
+      "item": "minecraft:ice"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "BAB",
+    "BCB"
+  ],
+  "result": {
+    "count": 6,
+    "id": "moddoscrias:badger_milk"
+  }
+}

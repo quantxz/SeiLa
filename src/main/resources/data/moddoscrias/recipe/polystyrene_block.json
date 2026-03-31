@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:ice"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "minecraft:snow_block"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "CBC",
+    "CCC"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moddoscrias:polystyrene_block"
+  }
+}
