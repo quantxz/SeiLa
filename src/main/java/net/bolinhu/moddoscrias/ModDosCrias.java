@@ -1,10 +1,15 @@
 package net.bolinhu.moddoscrias;
 
 import net.bolinhu.moddoscrias.block.ModBlocks;
+import net.bolinhu.moddoscrias.custom.IPlayerProperties;
+import net.bolinhu.moddoscrias.custom.ModCapabilities;
 import net.bolinhu.moddoscrias.item.ModCreativeModeTabs;
 import net.bolinhu.moddoscrias.item.ModItems;
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.capabilities.EntityCapability;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import org.slf4j.Logger;
-
+import com.fazecast.jSerialComm.SerialPort;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -48,6 +53,7 @@ public class ModDosCrias {
     public ModDosCrias(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(ModCapabilities::register);
 
         NeoForge.EVENT_BUS.register(this);
 
